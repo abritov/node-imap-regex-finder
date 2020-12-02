@@ -1,0 +1,30 @@
+{
+  "name": "imap-regex-finder",
+  "version": "1.0.0",
+  "description": "A simple tool to find any matching mattern in your imap mailbox",
+  "main": "src/lib.js",
+  "homepage": "https://github.com/mdfitumi/node-imap-regex-finder",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "imap",
+    "text-finder",
+    "confirmation-code"
+  ],
+  "author": "pkgsail.dev@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "dependencies": {
+    "imap-simple": "^5.0.0"
+  }
+}

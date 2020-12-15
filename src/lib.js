@@ -1,3 +1,5 @@
+const imap = require('imap-simple');
+
 function lastFiveHours() {
     const delay = 5 * 3600 * 1000;
     const since = new Date();

@@ -24,7 +24,11 @@ async function imapFindMatchedPatterns(imapCredentials, subjectRegExp, patternRe
             .map(_ => patternRegExp.exec(_.parts[1].body))
             .filter(Boolean)
             .map(_ => _[1]);
-        debugLogger('found patterns');
+        if (patterns.length > 0) {
+            debugLogger('found patterns');
+        } else {
+            throw new Error('imap patterns not found');
+        }
         return patterns;
     }
     catch(err) {

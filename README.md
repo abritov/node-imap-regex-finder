@@ -24,7 +24,7 @@ function recent5Hours() {
 }
 
 async function main() {
-    const codes = await imapFindMatchedPatterns(creds, 'Steam Account Recovery', codeFindRegex, recent5Hours());
+    const codes = await imapFindMatchedPatterns(creds, new RegExp('Steam Account Recovery'), codeFindRegex, recent5Hours());
     console.debug(codes);
 }
 

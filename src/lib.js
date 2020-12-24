@@ -1,4 +1,4 @@
-const imap = require('imap-simple');
+const imap = require('imap-simple-with-socks');
 
 function lastFiveHours() {
     const delay = 5 * 3600 * 1000;
